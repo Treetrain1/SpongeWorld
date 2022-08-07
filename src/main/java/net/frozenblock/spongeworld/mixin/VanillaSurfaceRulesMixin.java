@@ -22,7 +22,7 @@ public abstract class VanillaSurfaceRulesMixin {
 
 	@Inject(method = "createDefaultRule", at = @At("HEAD"), cancellable = true)
 	private static void overworld(boolean surface, boolean bedrockRoof, boolean bedrockFloor, CallbackInfoReturnable<MaterialRules.MaterialRule> cir) {
-		cir.setReturnValue(SPONGE);
+		cir.setReturnValue(MaterialRules.sequence(SPONGE));
 		cir.cancel();
 	}
 
