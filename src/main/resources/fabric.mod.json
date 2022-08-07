@@ -1,38 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "spongeworld",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Sponge World",
+  "description": "Turns the entire world into sponge!",
   "authors": [
     "Me!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Treetrain1/SpongeWorld",
+    "sources": "https://github.com/Treetrain1/SpongeWorld",
+    "issues": "https://github.com/Treetrain1/SpongeWorld/issues"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/spongeworld/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.frozenblock.spongeworld.SpongeWorld"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "spongeworld.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.8",
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }

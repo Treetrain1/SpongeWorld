@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Sponge World
 
 ## Setup
 
